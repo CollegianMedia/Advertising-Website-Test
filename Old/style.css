@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+}
+
+.container{
+    max-width: 980px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 30px;
+    font-size: 1.2em;
+}
+
+.wrapper {
+    max-width: 980px;
+    /*border: 1px solid black; * For testing purposes */
+    overflow: hidden; /* add this to contain floated children */
+    
+}
+
+.first {
+    width: 600px;
+    float:left;
+    margin-bottom: 25px;
+    /* border: 1px solid red; * For testing purposes*/
+}
+
+.second {
+    /* border: 1px solid green; */
+    float: left; 
+    margin-bottom: 25px;
+}
+
+/********** NAVBAR **********/
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    max-width: 980px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.904);
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.nav-links{
+    display: flex;
+    float: left;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 10px 10px;
+}
+
+.nav-links a:hover{
+    color: #7f54a3;
+}
+
+.burger{
+    display: none;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+#burgerLinks{
+    display: none;
+    position: inherit;
+    padding-top: 10px;
+}
+
+#burgerLinks a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    display: block;
+    background-color: rgba(0,0,0,0.7);
+  }
+
+/********** JUMBOTRON **********/
+.jumbotron{
+    height: 800px;
+    max-width: 100%;
+    color: white;
+    background-image: url("../img/ruralvscity-3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7);
+}
+
+.inner-jumbotron{
+    text-align: center;
+    padding-top: 230px;
+    line-height: 75px;
+}
+
+.inner-jumbotron h1{
+    font-size: 3.8em;
+}
+
+/********** DIFFERENT CONTAINER STYLING **********/
+.logo-container {
+    padding: 8em 0 3em 0;
+}
+
+.pdf-container{
+    display: block;
+}
+
+.rate-card-pdf-viewer{
+    text-align: center;
+    padding-top: 5em;
+}
+
+.rate-card-pdf-viewer h3{
+    margin-bottom: 1.5em;
+}
+
+.rate-card-pdf-viewer object{
+    padding: 5px 5px;
+    border-radius: 5px;
+    /*box-shadow: 5px 5px 5px grey;*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 600px;
+    height: 400px;
+}
+
+.contact-info{
+    padding: 100px 0 0 30px;
+}
+
+.contact-info p, .contact-info h3{
+    text-align: left;
+}
+
+
+/********** BUTTON STYLES **********/
+
+.btn{
+    border-radius: 5px;
+    background-color: #7f54a3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.btn:hover{
+    color: #7f54a3;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-decoration: underline;
+    /*border: 2px solid #7f54a3;*/
+    transition-duration: .5s;
+}
+
+.pdf-btn{
+    padding-top: 8.5em;
+    padding-left: 5.5em;
+}
+
+/********** FOOTER **********/
+footer{
+    height: 11em;
+    max-width: 100%;
+    background-color: rgba(0,0,0,.9);
+    margin-top: 5em;
+    color: white;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-info{
+    height: 100%;
+    padding: 25px 0 0 10px;
+    text-align: left;
+    font-size: 1em;
+}
+
+.copy-right{
+    background-color: rgba(0,0,0,.9);
+    color: white;
+    position: relative;
+    max-width: 100%;
+    font-size: 1em;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px - 768px) */
+@media only screen and (max-width: 768px) {
+    
+    /********** NAVBAR **********/
+    nav{
+        height: 8vh;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    
+    .rate-card-pdf-viewer object{
+        max-width: 600px;
+        height: 400px;
+    }
+
+    .pdf-btn{
+        padding-top: 1.5em;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+
+    .first {
+    width: 600px;
+    float:none;
+    text-align: center;
+    margin: 0 auto;
+    }
+
+    .second {
+    /* border: 1px solid green; */
+    float: none; 
+    text-align: center;
+    }
+
+
+}
