@@ -82,8 +82,8 @@ nav a:hover {
     
 }
 
-#rate-card-slides-parent > div {
-    justify-content: center;
+.carousel-inner > .item {
+    height: 100%;
 }
 
 .all-slides{
