@@ -40,7 +40,7 @@ nav a:hover {
 }
 
 .jumbotron-img {
-  max-width: 950px;
+  max-width: 98vw;
   max-height: 50vh;
   margin: 10px;
 }
@@ -193,45 +193,35 @@ footer a:hover {
 
 /* Medium devices (tablets, 960px and down) */
 @media (max-width: 980px) {
-  .jumbotron-img {
-    width: 760px;
-  }
+  /* .jumbotron-img { */
+  /* width: 760px; */
+  /* } */
 
 }
 
 
 /* Medium devices (tablets, 960px and down) */
 @media (max-width: 959px) {
-  .jumbotron-img {
-    width: 760px;
-  }
+  /* .jumbotron-img { */
+  /* width: 760px; */
+  /* } */
 
 }
 
 
 /* Medium devices (tablets, 768px and down) */
 @media (max-width: 768px) {
-  .jumbotron-img {
-    width: 580px;
-    height: auto;
-  }
+  /* .jumbotron-img { */
+  /* width: 580px; */
+  /* height: auto; */
+  /* } */
 }
 
 /* Small devices (landscape phones, 576px and down) */
 @media (max-width: 576px) {
 
-  .nav {
-    display: none;
-  }
-
   .jumbotron {
-    background-image: none;
-    background-color: #7f54a3;
-    height: auto;
-  }
-
-  .jumbotron-img {
-    width: 375px;
+    height: 90vh;
   }
 
   .pdf-fullscreen {
