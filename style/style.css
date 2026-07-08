@@ -74,14 +74,9 @@ nav a:hover {
   margin: 16px 8px 0px;
 }
 
-/********** COLLEGIAN MEDIA KIT **********/
-
-.media-kit-section {
-  padding-top: 6vh;
-  padding-bottom: 2vh;
-  height: 100%;
-  text-align: center;
-
+.carousel-control-next,
+.carousel-control-prev {
+  filter: invert(1);
 }
 
 .all-slides {
@@ -90,6 +85,15 @@ nav a:hover {
   max-width: 75vw;
   margin-bottom: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/********** COLLEGIAN MEDIA KIT **********/
+
+.media-kit-section {
+  padding-top: 6vh;
+  padding-bottom: 2vh;
+  height: 100%;
+  text-align: center;
 }
 
 /********** FlyteDesk Link Section **********/
