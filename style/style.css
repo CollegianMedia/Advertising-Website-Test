@@ -22,12 +22,16 @@ nav a:hover {
 
 /********** JUMBOTRON **********/
 .jumbotron {
+  display: flex;
+  flex-direction: column;
   background-image: url("../img/ruralvscity-3.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto 100%;
+  background-size: cover;
   box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.7);
-  height: 100vh;
+  height: 95vh;
+  align-items: center;
+  justify-content: center;
 }
 
 .jumbotron .container-lg {
@@ -36,9 +40,9 @@ nav a:hover {
 }
 
 .jumbotron-img {
-  width: 960px;
-  height: auto;
-  margin: 0 auto 0 auto;
+  max-width: 950px;
+  max-height: 50vh;
+  margin: 10px;
 }
 
 /********** Group Img Section **********/
@@ -218,7 +222,6 @@ footer a:hover {
 
   .nav {
     display: none;
-
   }
 
   .jumbotron {
