@@ -56,7 +56,7 @@ nav a:hover {
 }
 
 
-/********** FALL 2021 RATE CARD SECTION **********/
+/********** RATE CARD SECTION **********/
 
 .rate-card-section {
   padding-top: 6vh;
@@ -64,12 +64,14 @@ nav a:hover {
   text-align: center;
 }
 
-/********** SPRING 2022 RATE CARD SECTION **********/
+.rate-card-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-.rate-card-section-spring {
-  padding-top: 6vh;
-  height: 100%;
-  text-align: center;
+.rate-card-links>a {
+  margin: 16px 8px;
 }
 
 /********** COLLEGIAN MEDIA KIT **********/
