@@ -1,2 +1,2 @@
 # Advertising-Website-Test
-A testing ground for fixing the advertising site
+This repository contains the current deployment of the advertising site. The repository name reflects an earlier test version, but this is the active production deployment.
